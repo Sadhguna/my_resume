@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/a084c6462e.js" crossorigin="anonymous"></script>
+	<title>pavan_resume</title>
+  <sytle>
+    body{
+	margin: 0px;
+}
+header{
+	background-image: url(images/3147142.jpg);
+	opacity: 0.9;
+	height: 65vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 1.2rem;
+}
+#name{
+	font-size: 50px;
+	margin-top: 100px;
+	text-align: center;
+	color: white;
+}
+#my_links{
+	text-align: center;
+	/*margin-top: 100px;*/
+}
+#my_links li{
+	margin: 0px 8px 0px 8px;
+	display: inline-block;
+	list-style: none;
+}
+#my_links li a i{
+	padding: 5px;
+	color: white;
+	font-size: 20px;
+	border-radius: 30%;
+}	
+#my_links li a i:hover{
+	color: black;
+	transition: color 0.5s;
+	box-shadow: 0px 0px 6px 3px black;
+}	
+
+.horizontal_list{
+	list-style: none;
+	text-align: center;
+	padding-left: 0px;
+	margin: 0px;
+}
+.horizontal_list li{
+	display: inline-block;
+	margin: 0px 8px 0px 8px;
+	font-size: 20px;
+}
+.horizontal_list li a{
+	color: white;
+	text-decoration: none;
+	transition: color 0.5s, border-bottom 4s;
+}
+.horizontal_list li a:hover{
+	color: black;
+	border-bottom: 2px solid gray;
+}
+.text_center{
+	text-align: center;
+}
+#about{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+#my_img{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -13vh;
+}
+#my_img img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 2px 4px white;
+
+}
+#about_para{
+	padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+}
+section{
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	align-items: center;
+}
+section:nth-child(2n){
+	background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	margin: 10px auto;
+	font-weight: 400;
+}
+.section-heading span{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+#skills_display{
+	width: auto;
+	height: 70%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.outer_div{
+	height: 2rem;
+	width: 12rem;
+	background-color: #b9b9b9;	
+	border-radius: 1.5rem;
+	margin: 50px 100px;
+	overflow: hidden;
+	box-shadow: 1px 1px 5px 2px #989882 inset;
+}
+#inner_div1{
+	width: 50%;
+	height: inherit;
+	background-color: #2857a4;
+	box-shadow: 1px 1px 5px 2px #989882;
+}
+#skill_name span{
+	font-size: 1.5rem;
+	color: white;
+	margin-top: 10px;
+	margin-left: 7px;
+}
+.outer_div>div{
+	border-radius: 1.3rem 0rem 0rem 1.3rem;
+}
+#inner_div2{
+	width: 50%;
+	height: inherit;
+	background-color: #93738c;
+	box-shadow: 1px 1px 5px 2px #989882;
+}
+#inner_div3{
+	width: 50%;
+	height: inherit;
+	background-color: #2857a4;
+    box-shadow: 1px 1px 5px 2px #989882;	
+}
+#inner_div4{
+	width: 50%;
+	height: inherit;
+	background-color: #0b8176;
+    box-shadow: 1px 1px 5px 2px #989882;	
+}
+#inner_div5{
+	width: 50%;
+	height: inherit;
+	background-color: #ec4d1c;
+    box-shadow: 1px 1px 5px 2px #989882;	
+}
+#inner_div6{
+	width: 50%;
+	height: inherit;
+	background-color: #0b8176;
+    box-shadow: 1px 1px 5px 2px #989882;	
+}
+.timeline{
+	width: 75%;
+	position: relative;
+}
+#education h1{
+	margin-bottom: 80px;
+}
+.timeline-box{
+	margin: 5px;
+	width: 40%;
+	min-height: 200px;
+	position: relative;
+	left: 40px;
+	text-align: right;
+}
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+.timeline-box:nth-child(2n){
+	margin-left: 53%;
+}
+
+.timeline-divider{
+	border-left: 2px dashed #0096fa6b;
+	height: 89%;
+	width: 0;
+	margin-left: 52%;
+	top: 3%;
+	position: absolute;
+}
+.timeline-traveller{
+	position: sticky;
+	transform: rotate(90deg);
+	top:30% ;
+	margin-left: -4px;
+	font-size: 1.5rem;
+	color: #2857a4;
+	z-index: 1;
+}
+.timeline-stop{
+	height: 10px;
+	width: 10px;
+	background-color: lightgrey;
+	border-radius: 50%;
+	position: relative;
+	left: -6px;
+}
+#stop1{
+	top: -6%;
+}
+#stop2{
+	top: 30%;
+}
+#stop3{
+	top: 65%;
+}
+/*projects*/
+.projects{
+	height: auto;
+	width: 84%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	flex-wrap: wrap;
+}
+.project_box{
+	height: 300px;
+	left: 100px;
+	max-width: 460px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.project_box img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio-details a{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+.project_box:hover .portfolio-details a{
+    background-color: #80808078;
+    color: white;
+}
+.project_box:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+.project_box:nth-child(2n){
+	margin-left: 46%;
+}
+.divider{
+	border-left: 2px dashed #0096fa6b;
+	height: 95%;
+	top: 10px;
+	width: 0;
+	position: absolute;
+	margin-left: 50%;
+}
+#traveller{
+	position: sticky;
+	top:25% ;
+	margin-left: -13px;
+	font-size: 1.5rem;
+	color: #2857a4;
+	z-index: 1;
+}
+#stop4{
+	top: 0%;
+}
+#stop5{
+	top: 14%;
+}
+#stop6{
+	top: 29%;
+}
+#stop7{
+	top: 43%;
+}
+#stop8{
+	top: 58%;
+}
+#stop9{
+	top: 73%;
+}
+#stop10{
+	top: 87%;
+}
+/**certificate_section**/
+#certificate_section{
+	height: auto;
+	width: 90%;
+}
+#certificate_headings{
+	left: 10px;
+	width: 100%;
+	height: atuo;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	
+}
+.certificate_box{
+	width: 40%;
+	height: 40%;	
+	margin: 30px 60px;
+	
+}
+.certificate_box:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+#certificate_box1{
+	height: 0;
+	width: 0;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	position: fixed;
+	overflow: scroll;
+	transition: all 1s ease-in-out;
+}
+#certificate_box2{
+	height: 0;
+	width: 0;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	position: fixed;
+	overflow: scroll;
+	transition: all 1s ease-in-out;
+}
+#certificate_box3{
+	height: 0;
+	width: 0;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	position: fixed;
+	overflow:scroll;
+	transition: all 1s ease-in-out;
+}
+#certificate_box4{
+	height: 0;
+	width: 0;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	position: fixed;
+	overflow: scroll;
+	transition: all 1s ease-in-out;
+}
+#certificate_box5{
+	height: 0;
+	width: 0;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	position: fixed;
+	overflow: scroll;
+	transition: all 1s ease-in-out;
+}
+#certificate_box6{
+	height: 0;
+	width: 0;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	position: fixed;
+	overflow: scroll;
+	transition: all 1s ease-in-out;
+}
+#certificate_box1:target{
+	height: 80%;
+	width: 80%;
+	top: 10%;
+	left: 15%;
+}
+#certificate_box2:target{
+	height: 80%;
+	width: 80%;
+	top: 10%;
+	left: 15%;
+}
+#certificate_box3:target{
+	height: 80%;
+	width: 80%;
+	top: 10%;
+	left: 15%;
+}
+#certificate_box4:target{
+	height: 80%;
+	width: 80%;
+	top: 10%;
+	left: 15%;
+	background-size: cover;
+}
+#certificate_box5:target{
+	height: 80%;
+	width: 80%;
+	top: 10%;
+	left: 15%;
+}
+#certificate_box6:target{	
+	height: 80%;
+	width: 80%;
+	top: 10%;
+	left: 15%;
+}
+#mycontact{
+	height: auto;
+	font-size: 2rem;
+	width: auto;
+	text-align: center;
+	background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+} 
+#my-details-container div{
+	margin: 5px;
+}
+.m-blue {
+    color: #2857a4;
+}
+.m0 {
+    margin: 0;
+}
+.cross{
+	height: 2rem;
+	width: 2rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;
+	background-color: lightgrey;
+}
+
+    </style>
+</head>
+<body>
+	<header>
+		<nav>
+		<ul class="horizontal_list">
+			<li> <a href="#">home</a></li>
+			<li> <a href="#about">about</a></li>
+			<li> <a href="#skills">skills</a></li>
+			<li> <a href="#education">education</a></li>
+			<li> <a href="#portfolio">projects</a></li>
+			<li> <a href="#certificates">certificates</a></li>
+			<li> <a href="#mycontact">contact</a></li>
+		</ul>
+	</nav>		
+		<div>
+			<div>
+			<h1 id="name">pavan sadhguna attada</h1>
+		</div>
+		<div>
+		<ul id="my_links">
+			<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-hackerrank"></i></a></li>
+			<li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+		</ul>
+		</div>
+		</div>
+
+	</header>
+	<main>		
+		<section id="about">
+			<div id="my_img">
+			    <img src="images/my_image.jpg">
+		    </div>
+		    <div id="about_para">
+			    <p>
+				Muhammad Quli Qutb Shah established Hyderabad in 1591 to extend the capital beyond the fortified Golconda. In 1687, the city was annexed by the Mughals. In 1724, Mughal Viceroy Nizam Asaf Jah I declared his sovereignty and founded the Asaf Jahi dynasty, also known as the Nizams. Hyderabad served as the imperial capital of the Asaf Jahis from 1769 to 1948. As capital of the princely state of Hyderabad, the city housed the British Residency and cantonment until Indian independence in 1947. Hyderabad was annexed by the Indian Union in 1948 and continued as a capital of Hyderabad State (1948–56). After the introduction of the States Reorganisation Act of 1956, Hyderabad was made the capital of the newly formed Andhra Pradesh. In 2014, Andhra Pradesh was bifurcated to form Telangana and Hyderabad became the joint capital of the two states with a transitional arrangement scheduled to end in 2024. Since 1956, the city has housed the winter office of the President of India.
+			    </p>
+		    </div>			
+		</section>
+		<section id="skills">
+			<h1 class="section-heading">
+				<span><i class="fa-solid fa-computer"></i></span>
+				<span>SKILLS</span>
+			</h1>
+			<div id="skills_display">
+				<div class="outer_div">
+					<div id="inner_div1">
+						<div id="skill_name">
+							<span>c++</span>
+						</div>
+					</div>
+				</div>
+				<div class="outer_div">
+					<div id="inner_div2">
+						<div id="skill_name">
+							<span>java</span>
+						</div>
+					</div>
+				</div>
+				<div class="outer_div">
+					<div id="inner_div3">
+						<div id="skill_name">
+							<span>python</span>
+						</div>
+					</div>
+				</div>
+				<div class="outer_div">
+					<div id="inner_div4">
+						<div id="skill_name">
+							<span>dbms</span>
+						</div>
+					</div>
+				</div>
+				<div class="outer_div">
+					<div id="inner_div5">
+						<div id="skill_name">
+							<span>html</span>
+						</div>
+					</div>
+				</div>
+				<div class="outer_div">
+					<div id="inner_div6">
+						<div id="skill_name">
+							<span>css</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="education">
+			<h1 class="section-heading">
+				<span><i class="fa-solid fa-graduation-cap"></i></span>
+				<span>EDUCATION</span>
+			</h1>
+			<div class="timeline">
+				<div class="timeline-box">
+					<div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name "> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+				</div>
+				<div class="timeline-box">
+					<div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name "> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+				</div>
+				<div class="timeline-box">
+					<div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name "> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+				</div>
+				
+				<div class="timeline-divider">
+					<div class="timeline-traveller"><i class="fa-solid fa-person-biking"></i></div>
+					<div id="stop1" class="timeline-stop"></div>
+					<div id="stop2" class="timeline-stop"></div>
+					<div id="stop3" class="timeline-stop"></div>
+				</div>
+			</div>
+		</section>
+		<section id="portfolio">
+			<h1 class="section-heading">
+				<span><i class="fa-solid fa-diagram-project"></i></span>
+				<span>PROJECTS</span>
+			</h1>
+			<div class="projects">
+				<div class="project_box"> 
+					 <img src="images/counter_image.png">
+                    <div class="portfolio-details">
+                        <p>
+                           <a href="counter.html">Write here basic details about the project.</a> 
+                        </p>
+                    </div>
+				</div>
+				<div class="project_box">
+					 <img src="images/garbage_photo.jpg">
+                    <div class="portfolio-details">
+                        <p>
+                            <a href="garbage.html">Write here basic details about the project.</a>
+                        </p>
+                    </div>
+				</div>
+				<div class="project_box">
+				 <img src="images/wipers_photo.jpg">
+                    <div class="portfolio-details">
+                        <p>
+                            <a href="car_wipers.html">Write here basic details about the project.</a>
+                        </p>
+                    </div></div>
+				<!--<div class="project_box">
+					 <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+				</div>
+			    <div class="project_box">
+			    	 <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+			    </div>
+			    <div class="project_box">
+			    	 <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+			    </div>
+			    <div class="project_box">
+			    	 <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+			    </div>-->
+			    <div class="divider">
+			    	<div id="traveller"><i class="fa-solid fa-car"></i></div>
+			    	<div id="stop4" class="timeline-stop"></div>
+					<div id="stop5" class="timeline-stop"></div>
+					<div id="stop6" class="timeline-stop"></div>
+					<!--<div id="stop7" class="timeline-stop"></div>
+					<div id="stop8" class="timeline-stop"></div>
+					<div id="stop9" class="timeline-stop"></div>
+					<div id="stop10" class="timeline-stop"></div>-->
+			    </div>
+			</div>
+		</section>
+		<section id="certificates">
+			<h1 class="section-heading">
+				<span><i class="fa-solid fa-diagram-project"></i></span>
+				<span>CERTIFICATES</span>
+			</h1>
+			<div id="certificate_section">
+				<div id="certificate_headings">
+					<div class="certificate_box"><a href="#certificate_box1"><img src="images/java_certificate.jpg" height="100%" width="100%"></a></div>
+					<div id="certificate_box1">
+						<div class="cross"><a href="#certificates">X</a></div>
+						<div><a href="images/java_certificate.jpg"><img src="images/java_certificate.jpg" height="100%" width="100%"></a></div>
+					</div>
+				    <div class="certificate_box"><a href="#certificate_box2"><img src="images/java_ds_certificate.jpg" height="100%" width="100%"></a></div>
+					<div id="certificate_box2">
+						<div class="cross"><a href="#certificates">X</a></div>
+						<div><a href="images/java_ds_certificate.jpg"><img src="images/java_ds_certificate.jpg" height="100%" width="100%"></a></div>
+					</div>
+					<div class="certificate_box"><a href="#certificate_box3"><img src="images/typing38_certificate.jpg" height="100%" width="100%"></a></div>
+					<div id="certificate_box3">
+						<div class="cross"><a href="#certificates">X</a></div>
+						<div><a href="images/typing38_certificate.jpg"><img src="images/typing38_certificate.jpg" height="100%" width="100%"></a></div>
+					</div>
+					<div class="certificate_box"><a href="#certificate_box4"><img src="images/java_nptel_certificate.jpg" height="100%" width="100%"></a></div>
+					<div id="certificate_box4">
+						<div class="cross"><a href="#certificates">X</a></div>
+						<div><a href="images/java_nptel_certificate.jpg"><img src="images/java_nptel_certificate.jpg" height="100%" width="100%"></a></div>
+					</div>
+					<div class="certificate_box"><a href="#certificate_box5"><img src="images/dbms_certificate.jpg" height="100%" width="100%"></a></div>
+					<div id="certificate_box5">
+						<div class="cross"><a href="#certificates">X</a></div>
+						<div><a href="images/dbms_certificate.jpg"><img src="images/dbms_certificate.jpg" height="100%" width="100%"></a></div>
+					</div>
+					<div class="certificate_box"><a href="#certificate_box6"><img src="images/logo_switchtocode.png" height="100%" width="100%"></a></div>
+					<!--<div id="certificate_box6">
+						<div class="cross"><a href="#certificates">X</a></div>
+						<div><a href="images/coding_ninjas.png"><img src="images/logo_switchtocode.png" height="100%" width="100%"></a></div>
+					</div>-->
+				</div>
+			</div>
+		</section>
+		<section id="mycontact">
+			<div id="contact_container">
+			    <div id="my-details-container">
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Delhi, India</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>9999999999</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>myemail@gmail.com</span>
+                    </div>
+                </div>
+                <div id="declaration">
+                	<h3>DECLARATION</h3>
+                <p>I hereby declare that the above mentioned
+                details are true to the best of my knowledge and belief</p>
+                </div>
+            </div>
+		</section>
+		
+	</main>
+
+</body>
+</html>
